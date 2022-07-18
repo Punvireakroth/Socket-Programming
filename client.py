@@ -23,8 +23,19 @@ def send(msg):
     send_length += b' ' * (HEADER - len(send_length))
     client.send(send_length)
     client.send(message)
+    # Get message from server 
+    print(client.recv(2048).decode(FORMAT))
+
+# send("Hello, World")
+# send("You are great ")
+# send("I believe in You")
+# send(DISCONNECT_MESSAGE)
+
+# ______________________________Connect with multiple client ____________________________________________# 
 
 send("Hello, World")
+input()
 send("You are great ")
+input()
 send("I believe in You")
 send(DISCONNECT_MESSAGE)
