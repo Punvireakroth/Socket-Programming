@@ -1,5 +1,5 @@
 import socket
-import threading # Create multiple threads within one Python program  ( Seperate code out so it not waiting for order code to finish before it able to execute )
+import threading # Create multiple threads within one Python program  ( Seperate code out so it not waiting for order code to finish before it able to execute ) multithread sustains the threads or the clients connected to it in a Python application.
 
 
 HEADER = 64
